@@ -1,0 +1,147 @@
+CONSULTAS
+
+# CONSULTA 1
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ncit: <https://ncit.nci.nih.gov/ncitbrowser/#>
+PREFIX ensembl: <http://www.ensembl.org/id/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX specie: <https://cancerdata.org/specie/>
+
+SELECT DISTINCT ?gene ?geneLabel ?protein ?proteinLabel
+WHERE {
+  ?gene rdf:type ncit:C16612 ;
+        rdfs:label ?geneLabel .
+  
+  OPTIONAL {
+    ?protein rdf:type ncit:C17021 ;
+             rdfs:label ?proteinLabel ;
+             obo:SIO_010079 ?gene .
+  }
+  
+    ?gene rdf:type specie:Homo_Sapiens .
+} 
+
+
+# CONSULTA 2
+
+PREFIX rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX specie: <https://cancerdata.org/specie/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX ncit: <https://ncit.nci.nih.gov/ncitbrowser/#>
+PREFIX cancer: <https://cancerdata.org/types/>
+PREFIX afo: <http://purl.allotrope.org/ontologies/property/#>
+
+SELECT ?humanGeneLabel ?humanChromosome ?humanProteinLabel ?mouseProteinLabel ?humanGeneComment 
+WHERE {
+  ?humanGene rdf:type specie:Homo_Sapiens ;
+             rdfs:label ?humanGeneLabel ;
+             ncit:C28708 ?mouseGene ;
+             obo:PATO_0002261 ?humanChromosomeUri ;
+             obo:SIO_010078 ?humanProteinUri ;
+             rdfs:comment ?humanGeneComment .
+  ?mouseGene rdf:type specie:Mus_musculus ;
+             rdfs:label ?mouseGeneLabel ;
+             obo:SIO_010078 ?mouseProteinUri .
+  ?protein rdf:type ncit:C17021 ;
+           obo:SIO_010079 ?humanGene .
+
+  BIND(REPLACE(STR(?humanChromosomeUri), "https://cancerdata.org/chromosome/", "") AS ?humanChromosome)
+  BIND(REPLACE(STR(?humanProteinUri), "http://www.uniprot.org/uniprot/", "") AS ?humanProteinLabel)
+  BIND(REPLACE(STR(?mouseProteinUri), "http://www.uniprot.org/uniprot/", "") AS ?mouseProteinLabel)
+}
+
+# CONSULTA 3
+
+PREFIX rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ncit: <https://ncit.nci.nih.gov/ncitbrowser/#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cancer: <https://cancerdata.org/types/>
+PREFIX low_exp: <https://cancerdata.org/low_expexpression/>
+PREFIX high_exp: <https://cancerdata.org/high_expexpression/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?proteinName (REPLACE(STR(?uniProtURI), "http://www.uniprot.org/uniprot/", "") AS ?uniProtID) ?cancerType ?proteinLength ?expressionLevel
+WHERE {
+  {
+    ?cancer rdf:type ncit:C9305 ;
+            rdfs:label ?cancerType ;
+            low_exp:low ?protein .
+    ?protein rdf:type ncit:C17021 ; 
+             rdfs:label ?proteinName ;
+             ncit:C25334 ?proteinLength ;
+             owl:sameAs ?uniProtURI .
+    BIND("Low" AS ?expressionLevel)
+  }
+  UNION
+  {
+    ?cancer rdf:type ncit:C9305 ;
+            rdfs:label ?cancerType ;
+            high_exp:high ?protein .
+    ?protein rdf:type ncit:C17021 ; 
+             rdfs:label ?proteinName ;
+             ncit:C25334 ?proteinLength ;
+             owl:sameAs ?uniProtURI .
+    BIND("High" AS ?expressionLevel)
+  }
+}
+ORDER BY xsd:integer(?proteinLength)
+
+
+# CONSULTA 4
+
+PREFIX rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ncit: <https://ncit.nci.nih.gov/ncitbrowser/#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX publi: <https://cancerdata.org/pulication/>
+PREFIX cancer: <https://cancerdata.org/types/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?pubmedID ?date ?title
+WHERE {
+  ?cancer rdf:type ncit:C9305 ;
+          rdfs:label ?cancerLabel ;
+          dcterms:ref ?publication .
+  FILTER (?cancerLabel = "Colorectal Cancer")
+  ?publication rdf:class ncit:C48471 ;
+               owl:sameAs ?pubURL ;
+               dcterms:title ?title ;
+               dcterms:date ?date .
+  BIND(REPLACE(STR(?pubURL), "https://pubmed.ncbi.nlm.nih.gov/", "") AS ?pubmedID)
+}
+ORDER BY DESC(?date)
+
+
+#CONSULTA 5
+
+PREFIX rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ncit: <https://ncit.nci.nih.gov/ncitbrowser/#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX afo: <http://purl.allotrope.org/ontologies/property/#>
+PREFIX cancer: <https://cancerdata.org/types/>
+
+SELECT ?proteinLabel ?geneLabel ?orthologGeneLabel ?cancerType ?maxProteinLength ?proteinComment
+WHERE {
+  {
+    SELECT ?protein (MAX(xsd:integer(?length)) AS ?maxProteinLength)
+    WHERE {
+      ?protein ncit:C25334 ?length .
+    }
+    GROUP BY ?protein
+  }
+  ?protein rdfs:label ?proteinLabel .
+  ?protein rdfs:comment ?proteinComment .
+  ?protein obo:SIO_010079 ?gene .
+  ?gene rdfs:label ?geneLabel .
+  ?gene ncit:C28708 ?orthologGene .
+  ?orthologGene rdfs:label ?orthologGeneLabel .
+
+  ?cancer afo:AFX_0002745 ?protein ;
+          rdfs:label ?cancerType .
+}
+ORDER BY DESC(?maxProteinLength)
+LIMIT 1

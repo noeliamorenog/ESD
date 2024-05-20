@@ -1,0 +1,189 @@
+<https://cancerdata.org/Homo_Sapiens> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C14225>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Homo_Sapiens> <http://www.w3.org/2000/01/rdf-schema#label> "Homo Sapiens"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Mus_musculus> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C45247>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Mus_musculus> <http://www.w3.org/2000/01/rdf-schema#label> "Common mouse"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Homo_Sapiens>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://www.w3.org/2000/01/rdf-schema#label> "APC Gene Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C17567>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSG00000134982>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/5>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P25054>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene plays a role in signal transduction. It is involved in both adhesion and migration of cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC> <https://ncit.nci.nih.gov/ncitbrowser/#C28708> <https://cancerdata.org/APC_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Homo_Sapiens>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://www.w3.org/2000/01/rdf-schema#label> "KRAS Gene Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C25785>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSG00000133703>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/12>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P01116>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <http://www.w3.org/2000/01/rdf-schema#comment> "A gene that may cause cancer when it is mutated (changed). The Kras gene makes the KRAS protein, which is involved in cell signaling pathways, cell growth, and apoptosis (cell death). Agents that block the activity of the mutated Kras gene or its protein may stop the growth of cancer."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS> <https://ncit.nci.nih.gov/ncitbrowser/#C28708> <https://cancerdata.org/KRAS_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Homo_Sapiens>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://www.w3.org/2000/01/rdf-schema#label> "TP53 Gene Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C17359>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSG00000141510>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/17>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P04637>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene plays a critical role in cell cycle regulation and has tumor suppressor activity."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TP53> <https://ncit.nci.nih.gov/ncitbrowser/#C28708> <https://cancerdata.org/TRP53_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Homo_Sapiens>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://www.w3.org/2000/01/rdf-schema#label> "BRAF Gene Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C18363>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSG00000157764>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/7>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P15056>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF> <https://ncit.nci.nih.gov/ncitbrowser/#C28708> <https://cancerdata.org/BRAF_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Homo_Sapiens>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://www.w3.org/2000/01/rdf-schema#label> "EGFR Gene Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C17757>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSG00000146648>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/7>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P00533>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/EGFR> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Mus_musculus>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2000/01/rdf-schema#label> "APC Gene Common Mouse"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2000/01/rdf-schema#label> "Adenomatous polyposis coli protein Mus Musculus"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C17567>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSMUSG00000005871>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/B2RUG9>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/18>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/B2RUG9>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene plays a role in signal transduction. It is involved in both adhesion and migration of cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "Tumor suppressor. Its activity is correlated with its phosphorylation state."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "2842"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_MM> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/APC_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Mus_musculus>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://www.w3.org/2000/01/rdf-schema#label> "KRAS Gene Common Mouse"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C25785>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSMUSG00000030265>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/6>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P32883>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/KRAS_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "A gene that may cause cancer when it is mutated (changed). The Kras gene makes the KRAS protein, which is involved in cell signaling pathways, cell growth, and apoptosis (cell death). Agents that block the activity of the mutated Kras gene or its protein may stop the growth of cancer."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Mus_musculus>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://www.w3.org/2000/01/rdf-schema#label> "TRP53 Gene Common Mouse"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C17359>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSMUSG00000059552>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/11>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P02340>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/TRP53_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene plays a critical role in cell cycle regulation and has tumor suppressor activity."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cancerdata.org/Mus_musculus>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C16612>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2000/01/rdf-schema#label> "BRAF Gene Common Mouse"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2000/01/rdf-schema#label> "Serine/threonine-protein kinase B-raf"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C18363>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.ensembl.org/id/ENSMUSG00000002413>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P28028>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://purl.obolibrary.org/obo/PATO_0002261> <https://cancerdata.org/chromosome/6>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://purl.obolibrary.org/obo/SIO_010078> <http://www.uniprot.org/uniprot/P28028>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "751"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_MM> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/BRAF_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <http://www.w3.org/2000/01/rdf-schema#label> "Adenomatous polyposis coli protein Human"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P04637>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "2843"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/APC>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/APC_HUMAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Tumor suppressor. Its activity is correlated with its phosphorylation state."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <http://www.w3.org/2000/01/rdf-schema#label> "GTPase KRas"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P01116>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "189"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/KRAS>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/RASK_HUMAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Ras proteins bind GDP/GTP and possess intrinsic GTPase activity.\r\nPlays an important role in the regulation of cell proliferation and promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <http://www.w3.org/2000/01/rdf-schema#label> "Cellular tumor antigen p53"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P04637>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "393"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/TP53>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_HUMAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <http://www.w3.org/2000/01/rdf-schema#label> "Serine/threonine-protein kinase B-raf"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P15056>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "766"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <http://purl.obolibrary.org/obo/SIO_010079> <https://www.ncbi.nlm.nih.gov/gene/BRAF>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/BRAF_HUMAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus."  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <http://www.w3.org/2000/01/rdf-schema#label> "Epidermal growth factor receptor"  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P00533>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "1210"  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/EGFR>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/EGFR_HUMAN> <http://www.w3.org/2000/01/rdf-schema#comment> "Pivotal role in regulating cell growth, proliferation, differentiation, and survival by activating downstream signaling pathways, thereby influencing critical cellular processes including cell cycle progression, apoptosis, angiogenesis and metastasis."  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <http://www.w3.org/2000/01/rdf-schema#label> "GTPase KRas Mus Musculus"  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P32883>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "189"  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <http://purl.obolibrary.org/obo/SIO_010079> <https://www.ncbi.nlm.nih.gov/gene/KRAS_MM>  <https://cancerdata.org/graph/> .
+<https://www.ncbi.nlm.nih.gov/protein/RASK_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "Ras proteins bind GDP/GTP and possess intrinsic GTPase activity.\r\nPlays an important role in the regulation of cell proliferation and promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C17021>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <http://www.w3.org/2000/01/rdf-schema#label> "Cellular tumor antigen p53 Mus Musculus"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uniprot.org/uniprot/P02340>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <https://ncit.nci.nih.gov/ncitbrowser/#C25334> "390"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <http://purl.obolibrary.org/obo/SIO_010079> <https://cancerdata.org/TRP53_MM>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/P53_MM> <http://www.w3.org/2000/01/rdf-schema#comment> "Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C9305>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://www.w3.org/2000/01/rdf-schema#label> "Colorectal Cancer"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C2955>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/APC_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/BRAF_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <https://cancerdata.org/high_expexpression/high> <https://cancerdata.org/APC>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_38423379>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_34742312>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_30088781>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_32007736>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Colorectal_Cancer> <http://www.w3.org/2000/01/rdf-schema#comment> "Cancer that begins in the colon or rectum, typically arising from adenomatous polyps in the colon."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C9305>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://www.w3.org/2000/01/rdf-schema#label> "Pancreatic Cancer"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C2955>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/EGFR_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <https://cancerdata.org/high_expexpression/high> <https://cancerdata.org/EGFR_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_30088781>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_32007736>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Pancreatic_Cancer> <http://www.w3.org/2000/01/rdf-schema#comment> "Cancer that develops in the pancreas, a glandular organ located behind the stomach."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ncit.nci.nih.gov/ncitbrowser/#C9305>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://www.w3.org/2000/01/rdf-schema#label> "Lung Cancer"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://www.w3.org/2002/07/owl#sameAs> <https://ncit.nci.nih.gov/ncitbrowser/#C2955>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/EGFR_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://purl.allotrope.org/ontologies/property/#AFX_0002745> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/RASK_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <https://cancerdata.org/low_expexpression/low> <https://cancerdata.org/P53_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <https://cancerdata.org/high_expexpression/high> <https://cancerdata.org/EGFR_HUMAN>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_30088781>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://purl.org/dc/terms/ref> <https://cancerdata.org/PUB_32007736>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/Lung_Cancer> <http://www.w3.org/2000/01/rdf-schema#comment> "Malignant tumor that begins in the tissues of the lungs, typically arising from exposure to carcinogens such as tobacco smoke or environmental pollutants."  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_38423379> <https://www.w3.org/1999/02/22-rdf-syntax-ns#class> <https://ncit.nci.nih.gov/ncitbrowser/#C48471>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_38423379> <http://www.w3.org/2002/07/owl#sameAs> <https://pubmed.ncbi.nlm.nih.gov/38423379>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_38423379> <http://purl.org/dc/terms/title> "Morindone as a potential therapeutic compound targeting TP53 and KRAS mutations in colorectal cancer cells"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_38423379> <http://purl.org/dc/terms/date> "2024"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_34742312> <https://www.w3.org/1999/02/22-rdf-syntax-ns#class> <https://ncit.nci.nih.gov/ncitbrowser/#C48471>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_34742312> <http://www.w3.org/2002/07/owl#sameAs> <https://pubmed.ncbi.nlm.nih.gov/34742312>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_34742312> <http://purl.org/dc/terms/title> "Role of oncogenic KRAS in the prognosis, diagnosis and treatment of colorectal cancer"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_34742312> <http://purl.org/dc/terms/date> "2021"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_32007736> <https://www.w3.org/1999/02/22-rdf-syntax-ns#class> <https://ncit.nci.nih.gov/ncitbrowser/#C48471>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_32007736> <http://www.w3.org/2002/07/owl#sameAs> <https://pubmed.ncbi.nlm.nih.gov/32007736>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_32007736> <http://purl.org/dc/terms/title> "Cancer type-dependent correlations between TP53 mutations and antitumor immunity"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_32007736> <http://purl.org/dc/terms/date> "2020"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_30088781> <https://www.w3.org/1999/02/22-rdf-syntax-ns#class> <https://ncit.nci.nih.gov/ncitbrowser/#C48471>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_30088781> <http://www.w3.org/2002/07/owl#sameAs> <https://pubmed.ncbi.nlm.nih.gov/30088781>  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_30088781> <http://purl.org/dc/terms/title> "A Highly Verified Assay for KRAS Mutation Detection in Tissue and Plasma of Lung, Colorectal, and Pancreatic Cancer"  <https://cancerdata.org/graph/> .
+<https://cancerdata.org/PUB_30088781> <http://purl.org/dc/terms/date> "2019"  <https://cancerdata.org/graph/> .

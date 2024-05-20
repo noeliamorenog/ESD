@@ -1,0 +1,271 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+@prefix afo: <http://purl.allotrope.org/ontologies/property/#>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix ncit:<https://ncit.nci.nih.gov/ncitbrowser/#>.
+@prefix gene: <https://www.ncbi.nlm.nih.gov/gene/>.
+@prefix protein: <https://www.ncbi.nlm.nih.gov/protein/>.
+@prefix plength: <https://www.ncbi.nlm.nih.gov/protein/lenght/>.
+@prefix up: <http://www.uniprot.org/uniprot/>.
+@prefix ensembl: <http://www.ensembl.org/id/>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+@prefix pub:<https://pubmed.ncbi.nlm.nih.gov/>.
+@prefix dcterms :<http://purl.org/dc/terms/>.
+@prefix cd: <https://cancerdata.org/>.
+@prefix low_exp: <https://cancerdata.org/low_expexpression/>.
+@prefix high_exp: <https://cancerdata.org/high_expexpression/>.
+@prefix chr: <https://cancerdata.org/chromosome/>.
+
+
+# Species
+
+cd:Homo_Sapiens
+    rdf:type ncit:C14225;
+    rdfs:label "Homo Sapiens".
+
+cd:Mus_musculus
+    rdf:type ncit:C45247;
+    rdfs:label "Common mouse".
+
+# Genes HS
+
+cd:APC
+    rdf:type cd:Homo_Sapiens;
+    rdfs:label "APC Gene Human";
+    rdf:type ncit:C16612;
+    owl:sameAs ncit:C17567;
+    owl:sameAs ensembl:ENSG00000134982;
+    obo:PATO_0002261 chr:5;
+    obo:SIO_010078 up:P25054;
+    rdfs:comment "This gene plays a role in signal transduction. It is involved in both adhesion and migration of cells.";
+    ncit:C28708 cd:APC_MM.
+
+cd:KRAS
+    rdf:type cd:Homo_Sapiens;
+	rdfs:label "KRAS Gene Human";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C25785;
+	owl:sameAs ensembl:ENSG00000133703;
+    obo:PATO_0002261 chr:12;
+	obo:SIO_010078 up:P01116;
+	rdfs:comment "A gene that may cause cancer when it is mutated (changed). The Kras gene makes the KRAS protein, which is involved in cell signaling pathways, cell growth, and apoptosis (cell death). Agents that block the activity of the mutated Kras gene or its protein may stop the growth of cancer.";
+    ncit:C28708 cd:KRAS_MM.
+
+cd:TP53
+    rdf:type cd:Homo_Sapiens;
+	rdfs:label "TP53 Gene Human";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C17359;
+	owl:sameAs ensembl:ENSG00000141510;
+    obo:PATO_0002261 chr:17;
+	obo:SIO_010078 up:P04637;
+	rdfs:comment "This gene plays a critical role in cell cycle regulation and has tumor suppressor activity.";
+    ncit:C28708 cd:TRP53_MM.
+
+cd:BRAF
+    rdf:type cd:Homo_Sapiens;
+	rdfs:label "BRAF Gene Human";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C18363;
+	owl:sameAs ensembl:ENSG00000157764;
+    obo:PATO_0002261 chr:7;
+	obo:SIO_010078 up:P15056;
+	rdfs:comment "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells.";
+    ncit:C28708 cd:BRAF_MM.
+
+cd:EGFR
+    rdf:type cd:Homo_Sapiens;
+	rdfs:label "EGFR Gene Human";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C17757;
+	owl:sameAs ensembl:ENSG00000146648;
+    obo:PATO_0002261 chr:7;
+	obo:SIO_010078 up:P00533;
+	rdfs:comment "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells.".
+
+#Gene MM
+
+cd:APC_MM
+    rdf:type cd:Mus_musculus;
+    rdfs:label "APC Gene Common Mouse";
+    rdf:type ncit:C16612;
+    owl:sameAs ncit:C17567;
+    owl:sameAs ensembl:ENSMUSG00000005871;
+    obo:PATO_0002261 chr:18;
+    obo:SIO_010078 up:B2RUG9;
+    rdfs:comment "This gene plays a role in signal transduction. It is involved in both adhesion and migration of cells.".
+
+cd:KRAS_MM
+    rdf:type cd:Mus_musculus;
+	rdfs:label "KRAS Gene Common Mouse";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C25785;
+	owl:sameAs ensembl:ENSMUSG00000030265;
+    obo:PATO_0002261 chr:6;
+	obo:SIO_010078 up:P32883;
+	rdfs:comment "A gene that may cause cancer when it is mutated (changed). The Kras gene makes the KRAS protein, which is involved in cell signaling pathways, cell growth, and apoptosis (cell death). Agents that block the activity of the mutated Kras gene or its protein may stop the growth of cancer.".
+
+cd:TRP53_MM
+    rdf:type cd:Mus_musculus;
+	rdfs:label "TRP53 Gene Common Mouse";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C17359;
+	owl:sameAs ensembl:ENSMUSG00000059552;
+    obo:PATO_0002261 chr:11;
+	obo:SIO_010078 up:P02340;
+	rdfs:comment "This gene plays a critical role in cell cycle regulation and has tumor suppressor activity.".
+
+cd:BRAF_MM
+    rdf:type cd:Mus_musculus;
+	rdfs:label "BRAF Gene Common Mouse";
+    rdf:type ncit:C16612;
+	owl:sameAs ncit:C18363;
+	owl:sameAs ensembl:ENSMUSG00000002413;
+    obo:PATO_0002261 chr:6;
+	obo:SIO_010078 up:P28028;
+	rdfs:comment "This gene is involved in cell organization/biogenesis and the inhibition of apoptosis.  This gene may be mutated (changed) in many types of cancer, which causes a change in the B-RAF protein. This can increase the growth and spread of cancer cells.".
+
+
+# Protein HS
+
+cd:APC_HUMAN
+	rdf:type ncit:C17021;
+	rdfs:label "Adenomatous polyposis coli protein Human";
+	owl:sameAs up:P04637;
+	ncit:C25334 "2843";
+	obo:SIO_010079 cd:APC;
+	rdfs:comment "Tumor suppressor. Its activity is correlated with its phosphorylation state.".
+
+cd:RASK_HUMAN
+	rdf:type ncit:C17021;
+	rdfs:label "GTPase KRas";
+	owl:sameAs up:P01116;
+	ncit:C25334 "189";
+	obo:SIO_010079 cd:KRAS;
+	rdfs:comment "Ras proteins bind GDP/GTP and possess intrinsic GTPase activity.
+Plays an important role in the regulation of cell proliferation and promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells.".
+
+cd:P53_HUMAN
+	rdf:type ncit:C17021;
+	rdfs:label "Cellular tumor antigen p53";
+	owl:sameAs up:P04637;
+	ncit:C25334 "393";
+	obo:SIO_010079 cd:TP53;
+	rdfs:comment "Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type.".
+
+cd:BRAF_HUMAN
+	rdf:type ncit:C17021;
+	rdfs:label "Serine/threonine-protein kinase B-raf";
+	owl:sameAs up:P15056;
+	ncit:C25334 "766";
+	obo:SIO_010079 gene:BRAF;
+	rdfs:comment "Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus.".
+
+protein:EGFR_HUMAN
+	rdf:type ncit:C17021;
+	rdfs:label "Epidermal growth factor receptor";
+	owl:sameAs up:P00533;
+	ncit:C25334 "1210";
+	obo:SIO_010079 cd:EGFR;
+	rdfs:comment "Pivotal role in regulating cell growth, proliferation, differentiation, and survival by activating downstream signaling pathways, thereby influencing critical cellular processes including cell cycle progression, apoptosis, angiogenesis and metastasis.".
+
+#Protein MM
+
+cd:APC_MM
+	rdf:type ncit:C17021;
+	rdfs:label "Adenomatous polyposis coli protein Mus Musculus";
+	owl:sameAs up:B2RUG9;
+	ncit:C25334 "2842";
+	obo:SIO_010079 cd:APC_MM;
+	rdfs:comment "Tumor suppressor. Its activity is correlated with its phosphorylation state.".
+
+protein:RASK_MM
+	rdf:type ncit:C17021;
+	rdfs:label "GTPase KRas Mus Musculus";
+	owl:sameAs up:P32883;
+	ncit:C25334 "189";
+	obo:SIO_010079 gene:KRAS_MM;
+	rdfs:comment "Ras proteins bind GDP/GTP and possess intrinsic GTPase activity.
+Plays an important role in the regulation of cell proliferation and promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells.".
+
+cd:P53_MM
+	rdf:type ncit:C17021;
+	rdfs:label "Cellular tumor antigen p53 Mus Musculus";
+	owl:sameAs up:P02340;
+	ncit:C25334 "390";
+	obo:SIO_010079 cd:TRP53_MM;
+	rdfs:comment "Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type.".
+
+cd:BRAF_MM
+	rdf:type ncit:C17021;
+	rdfs:label "Serine/threonine-protein kinase B-raf";
+	owl:sameAs up:P28028;
+	ncit:C25334 "751";
+	obo:SIO_010079 cd:BRAF_MM;
+	rdfs:comment "Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus.".
+
+# Cancer
+
+cd:Colorectal_Cancer
+    rdf:type ncit:C9305;
+    rdfs:label "Colorectal Cancer";
+	owl:sameAs ncit:C2955;
+	afo:AFX_0002745 cd:APC_HUMAN;
+	afo:AFX_0002745 cd:RASK_HUMAN;
+	afo:AFX_0002745 cd:P53_HUMAN;
+	afo:AFX_0002745 cd:BRAF_HUMAN;
+    low_exp:low cd:RASK_HUMAN, cd:P53_HUMAN;
+    high_exp:high cd:APC;
+    dcterms:ref cd:PUB_38423379, cd:PUB_34742312, cd:PUB_30088781, cd:PUB_32007736;
+    rdfs:comment "Cancer that begins in the colon or rectum, typically arising from adenomatous polyps in the colon.".
+
+cd:Pancreatic_Cancer
+    rdf:type ncit:C9305;
+    rdfs:label "Pancreatic Cancer";
+	owl:sameAs ncit:C2955;
+	afo:AFX_0002745 cd:EGFR_HUMAN;
+	afo:AFX_0002745 cd:RASK_HUMAN;
+	afo:AFX_0002745 cd:P53_HUMAN;
+    low_exp:low cd:RASK_HUMAN, cd:P53_HUMAN;
+    high_exp:high cd:EGFR_HUMAN;
+    dcterms:ref cd:PUB_30088781, cd:PUB_32007736;
+    rdfs:comment "Cancer that develops in the pancreas, a glandular organ located behind the stomach.".
+
+cd:Lung_Cancer
+    rdf:type ncit:C9305;
+    rdfs:label "Lung Cancer";
+	owl:sameAs ncit:C2955;
+	afo:AFX_0002745 cd:EGFR_HUMAN;
+	afo:AFX_0002745 cd:RASK_HUMAN;
+	afo:AFX_0002745 cd:P53_HUMAN;
+    low_exp:low cd:RASK_HUMAN, cd:P53_HUMAN;
+    high_exp:high cd:EGFR_HUMAN;
+    dcterms:ref cd:PUB_30088781, cd:PUB_32007736;
+    rdfs:comment "Malignant tumor that begins in the tissues of the lungs, typically arising from exposure to carcinogens such as tobacco smoke or environmental pollutants.".
+
+# Publications
+
+cd:PUB_38423379
+    rdf:class ncit:C48471;
+    owl:sameAs pub:38423379;
+    dcterms:title "Morindone as a potential therapeutic compound targeting TP53 and KRAS mutations in colorectal cancer cells";
+    dcterms:date "2024".
+
+cd:PUB_34742312
+    rdf:class ncit:C48471;
+    owl:sameAs pub:34742312;
+    dcterms:title "Role of oncogenic KRAS in the prognosis, diagnosis and treatment of colorectal cancer";
+    dcterms:date "2021".
+
+cd:PUB_32007736
+    rdf:class ncit:C48471;
+    owl:sameAs pub:32007736;
+    dcterms:title "Cancer type-dependent correlations between TP53 mutations and antitumor immunity";
+    dcterms:date "2020".
+
+cd:PUB_30088781
+    rdf:class ncit:C48471;
+    owl:sameAs pub:30088781;
+    dcterms:title "A Highly Verified Assay for KRAS Mutation Detection in Tissue and Plasma of Lung, Colorectal, and Pancreatic Cancer";
+    dcterms:date "2019".
